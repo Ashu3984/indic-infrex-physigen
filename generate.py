@@ -193,13 +193,13 @@ def main():
             gr.components.Checkbox(label="Stream output"),
         ],
         outputs=[
-            gr.inputs.Textbox(
+            gr.components.Textbox(
                 lines=5,
                 label="Output",
             )
         ],
-        title=" Bactrian-X",
-        description="Bactrian-X is a multilingual model finetuned to follow instructions. It is trained on the [Stanford Alpaca-52k](https://github.com/tatsu-lab/stanford_alpaca) and [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data) data translated into many languages, and makes use of the Huggingface model implementation, and [alpaca-lora](https://github.com/tloen/alpaca-lora).",
+        title=" infre-X",
+        description="multilingual model finetuned to follow instructions. It is trained on the [Stanford Alpaca-52k](https://github.com/tatsu-lab/stanford_alpaca) and [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data) data translated into many languages, and makes use of the Huggingface model implementation, and [alpaca-lora](https://github.com/tloen/alpaca-lora).",
     ).queue().launch(server_name=args.server_name, share=args.share_gradio)
 
 
