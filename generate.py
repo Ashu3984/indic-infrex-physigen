@@ -174,6 +174,9 @@ def main():
                 lines=2,
                 label="Instruction",
                 placeholder="Generate a physics question...",
+                examples=[
+                    "Generate a Intermediate difficulty level physics question on the topic of Quantum Physics, subtopic Wave-Particle Duality, that tests Calculation skills, and test the skills of Problem-solving and Mathematical Application"
+                ]
             ),
             gr.components.Textbox(lines=2, label="Input", placeholder="none"),
             gr.components.Slider(
@@ -200,17 +203,7 @@ def main():
             )
         ],
         title="PHYSIGEN-inference",
-        description=f'''This model is trained on the [PHYSIGEN-phy-alpaca](https://huggingface.co/datasets/ashu3984/PHYSIGEN-phy-alpaca) dataset. \n\ Instruction example: Generate a Intermediate difficulty level physics question on the topic of Quantum Physics, subtopic Wave-Particle Duality, that tests Calculation skills, and test the skills of Problem-solving and Mathematical Application''',
-        default=[
-            "Generate a Intermediate difficulty level physics question on the topic of Quantum Physics, subtopic Wave-Particle Duality, that tests Calculation skills, and test the skills of Problem-solving and Mathematical Application",
-            "",
-            0.1,
-            0.75,
-            40,
-            4,
-            128,
-            False
-        ]
+        description=f'''This model is trained on the [PHYSIGEN-phy-alpaca](https://huggingface.co/datasets/ashu3984/PHYSIGEN-phy-alpaca) dataset. \n\ Instruction example: Generate a Intermediate difficulty level physics question on the topic of Quantum Physics, subtopic Wave-Particle Duality, that tests Calculation skills, and test the skills of Problem-solving and Mathematical Application'''
     ).launch(server_name=args.server_name, share=args.share_gradio)
 
 
