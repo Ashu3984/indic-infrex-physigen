@@ -202,7 +202,7 @@ def main():
             )
         ],
         title="PHYSIGEN-inference",
-        description=f'''This model is trained on the [PHYSIGEN-phy-alpaca](https://huggingface.co/datasets/ashu3984/PHYSIGEN-phy-alpaca) dataset. \n\ Instruction example: {example_instruction}'''
+        description=f'''This model is trained on the [PHYSIGEN-phy-dataset](https://huggingface.co/datasets/ashu3984/PHYSIGEN-phy-dataset) dataset. \n\ Instruction example: {example_instruction}'''
     ).launch(server_name=args.server_name, share=args.share_gradio)
 
 
