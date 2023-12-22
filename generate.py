@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import argparse
@@ -172,7 +173,8 @@ def main():
             gr.components.Textbox(
                 lines=2,
                 label="Instruction",
-                placeholder="Tell me about alpacas.",
+                placeholder="Generate a physics question...",
+                default="Generate a Intermediate difficulty level physics question on the topic of Quantum Physics, subtopic Wave-Particle Duality, that tests Calculation skills, and test the skills of Problem-solving and Mathematical Application"
             ),
             gr.components.Textbox(lines=2, label="Input", placeholder="none"),
             gr.components.Slider(
