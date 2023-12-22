@@ -198,8 +198,8 @@ def main():
                 label="Output",
             )
         ],
-        title=" infre-X",
-        description="multilingual model finetuned to follow instructions. It is trained on the [Stanford Alpaca-52k](https://github.com/tatsu-lab/stanford_alpaca) and [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data) data translated into many languages, and makes use of the Huggingface model implementation, and [alpaca-lora](https://github.com/tloen/alpaca-lora).",
+        title="PHYSIGEN-inference",
+        description=f'''This model is trained on the [PHYSIGEN-phy-alpaca](https://huggingface.co/datasets/ashu3984/PHYSIGEN-phy-alpaca) dataset. \n\ Instruction example: Generate a Intermediate difficulty level physics question on the topic of Quantum Physics, subtopic Wave-Particle Duality, that tests Calculation skills, and test the skills of Problem-solving and Mathematical Application'''
     ).queue().launch(server_name=args.server_name, share=args.share_gradio)
 
 
